@@ -1,0 +1,32 @@
+{
+	"name": "sumo-apps-to-csv",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"lint": "npx eslint src",
+		"test": "./node_modules/.bin/dotenvx run -- mocha",
+		"prepare": "husky"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/vfalconisumo/sumo-apps-to-csv.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/vfalconisumo/sumo-apps-to-csv/issues"
+	},
+	"homepage": "https://github.com/vfalconisumo/sumo-apps-to-csv#readme",
+	"devDependencies": {
+		"chai": "^5.2.0",
+		"eslint": "^8.57.1",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.31.0",
+		"globals": "^15.15.0",
+		"husky": "^9.1.7",
+		"mocha": "^11.1.0"
+	}
+}
