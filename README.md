@@ -4,6 +4,8 @@ This tool pulls the apps library from the Sumo API, creates a CSV, and downloads
 
 ## Configuration
 
+These are set in `.env` located in the repo root.
+
 | Config setting | Required | Description |
 |----------------|----------|-------------|
 | `SUMO_API_ACCESS_ID` | Yes | [Sumo API Docs](https://api.sumologic.com/docs/#section/Getting-Started/Authentication) |
