@@ -1,7 +1,7 @@
-import globals from 'globals';
-import { FlatCompat } from '@eslint/eslintrc';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { FlatCompat } from '@eslint/eslintrc';
+import globals from 'globals';
 
 // mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
@@ -19,8 +19,12 @@ export default [
 	...compat.extends('eslint-config-airbnb-base'),
 	{
 		rules: {
-			'no-tabs': 'off',
+			'array-callback-return': 'off',
+			'arrow-body-style': 'off',
+			'consistent-return': 'off',
+			'import/extensions': 'off',
 			'indent': 'off',
+			'no-tabs': 'off',
 		}
 	}
 ];

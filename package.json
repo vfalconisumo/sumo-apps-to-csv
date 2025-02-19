@@ -5,8 +5,10 @@
 	"main": "index.js",
 	"scripts": {
 		"lint": "npx eslint src",
-		"test": "./node_modules/.bin/dotenvx run -- mocha",
-		"prepare": "husky"
+		"prepare": "husky",
+		"start": "node src/index.js",
+		"start:dev": "npx nodemon --exec \"npm start\"",
+		"test": "./node_modules/.bin/dotenvx run -- mocha"
 	},
 	"type": "module",
 	"repository": {
@@ -27,6 +29,12 @@
 		"eslint-plugin-import": "^2.31.0",
 		"globals": "^15.15.0",
 		"husky": "^9.1.7",
-		"mocha": "^11.1.0"
+		"mocha": "^11.1.0",
+		"nodemon": "^3.1.9"
+	},
+	"dependencies": {
+		"change-case": "^5.4.4",
+		"csv-stringify": "^6.5.2",
+		"dotenv": "^16.4.7"
 	}
 }
